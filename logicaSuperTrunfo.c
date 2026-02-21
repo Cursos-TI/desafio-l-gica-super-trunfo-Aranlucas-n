@@ -94,7 +94,7 @@ int main() {
     printf("\nCarta 1 - %s (%s): %.2f \n", cidade1, estado1, densidade1);
     printf("Carta 2 - %s (%s): %.2f \n", cidade2, estado2, densidade2);
     if(densidade1 < densidade2){
-        printf("Resultado Carta 1 (%s) Venceu!", cidade1);
+        printf("Resultado Carta 1 (%s) Venceu!\n", cidade1);
     }
     else{
         printf("Resultado carta 2 (%s) Venceu!\n", cidade2);
