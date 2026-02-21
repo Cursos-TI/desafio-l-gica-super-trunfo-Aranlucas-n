@@ -64,6 +64,7 @@ int main() {
 
   // Abaixo foi feita as operações matemáticas
   // Multiplicado por 1 bilhão para facilitar no calculo e na leitura das cartas.
+  // Definido de forma explicita a variavel população para não ocrorrer perda de dados
 
     densidade1 = (float)populacao1 / area1; 
     pibpercapita1 = (pib1 * 1000000000) / (float)populacao1; 
