@@ -7,11 +7,11 @@ int main() {
 //carta1
     char estado1[10], codigo1[10], cidade1[50];
     int populacao1, turismo1;
-    float area1, pib1, densidade1, pibpercapita1;
+    float area1, pib1, densidade1;
 // carta2
     char estado2[10], codigo2[10], cidade2[50];
     int populacao2, turismo2;
-    float area2, pib2, densidade2, pibpercapita2;
+    float area2, pib2, densidade2;
 
 //Definição de variavel para o menu interativo
     int opcao;
@@ -20,9 +20,9 @@ int main() {
    
     printf("### Cadastro de Cartas Super Trunfo ###\n");
 
-    // Entradade de dados carta 1
+    // Entrada de dados carta 1
     printf("\n ###Cadastro da carta 1 ###\n");
-    printf("\nInicias do estado (ex:SP):");
+    printf("\nIniciais do estado (ex:SP):");
     scanf(" %s", estado1);
     printf("Código da carta de 01 a 04 (ex:A01, B03):");
     scanf(" %s", codigo1);
@@ -37,9 +37,9 @@ int main() {
     printf("Número de Pontos Turísticos:");
     scanf(" %d", &turismo1);
 
-    // Entradade de dados carta 2
+    // Entrada de de dados carta 2
     printf("\n### Cadastro da carta 2 ###\n");
-    printf("\nInicias do estado (ex:SP):");
+    printf("\nIniciais do estado (ex:SP):");
     scanf(" %s", estado2);
     printf("Código da carta de 01 a 04 (ex:A01, B03):");
     scanf(" %s", codigo2);
@@ -56,22 +56,18 @@ int main() {
 
   // Abaixo foi feita as operações matemáticas
   // Multiplicado por 1 bilhão para facilitar no calculo e na leitura das cartas.
-  // Definido de forma explicita a variavel população para não ocrorrer perda de dados
+  // Definido de forma explicita a variavel população para não ocorrer perda de dados
 
-    densidade1 = (float)populacao1 / area1; 
-    pibpercapita1 = (pib1 * 1000000000) / (float)populacao1; 
-
+    densidade1 = (float)populacao1 / area1;  
     densidade2 = (float)populacao2 / area2; 
-    pibpercapita2 = (pib2 * 1000000000) / (float)populacao2; 
-
-
+     
     // Menu interativo com switch
     printf("\n \n### Selecione uma das opções (1 a 5) para comparação das cartas ###\n");
     printf("1. Comparar população!\n"); 
     printf("2. Comparar Área!\n");
     printf("3. Comparar PIB!\n");
     printf("4. Comparar Pontos turísticos!\n");
-    printf("5 .Comparar Densidade demografica\n");
+    printf("5. Comparar Densidade demografica\n");
     printf("Opção:");
     scanf("%d", &opcao);
 
@@ -94,7 +90,7 @@ int main() {
     break;
     case 2:
     printf("\nComparação utilizando Área!\n");
-    printf("\nNome das cidades:%s e %s\nAtributo Área\n%s Possui Área de %.2fkm²\n%s Possui Área de %.2fkm²\n"
+    printf("\nNome das cidades:%s e %s\nAtributo Área\n%s Possui Área de %.2f km²\n%s Possui Área de %.2f km²\n"
             , cidade1, cidade2, cidade1, area1, cidade2, area2);
     if (area1 == area2) 
         {
@@ -152,7 +148,7 @@ int main() {
     break;
     
     default:
-    printf("### Opção invalida! ###\n\n");
+    printf("### Opção inválida! ###\n\n");
         break;
     }
 
