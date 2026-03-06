@@ -18,10 +18,10 @@ int main() {
 
     // Cadastro das Cartas:
    
-    printf("***Cadastro de Cartas Super Trunfo***\n");
+    printf("### Cadastro de Cartas Super Trunfo ###\n");
 
     // Entradade de dados carta 1
-    printf("\n###Cadastro da carta 1###\n");
+    printf("\n ###Cadastro da carta 1 ###\n");
     printf("\nInicias do estado (ex:SP):");
     scanf(" %s", estado1);
     printf("Código da carta de 01 a 04 (ex:A01, B03):");
@@ -38,7 +38,7 @@ int main() {
     scanf(" %d", &turismo1);
 
     // Entradade de dados carta 2
-    printf("\n###Cadastro da carta 2###\n");
+    printf("\n### Cadastro da carta 2 ###\n");
     printf("\nInicias do estado (ex:SP):");
     scanf(" %s", estado2);
     printf("Código da carta de 01 a 04 (ex:A01, B03):");
@@ -66,7 +66,7 @@ int main() {
 
 
     // Menu interativo com switch
-    printf("\n \n###Selecione uma das opções (1 a 5) para comparação das cartas###\n");
+    printf("\n \n### Selecione uma das opções (1 a 5) para comparação das cartas ###\n");
     printf("1. Comparar população!\n"); 
     printf("2. Comparar Área!\n");
     printf("3. Comparar PIB!\n");
@@ -84,11 +84,11 @@ int main() {
             , cidade1, cidade2, cidade1, populacao1, cidade2, populacao2);
     if (populacao1 == populacao2) 
         {
-            printf("###As cartas empataram!###\n\n\n");
+            printf("### As cartas empataram! ###\n\n\n");
     }else if(populacao1 > populacao2){
-            printf("###A carta 1 %s venceu!###\n\n\n", cidade1);
+            printf("### A carta 1 %s venceu! ###\n\n\n", cidade1);
     }else{
-            printf("###A carta 2 %s venceu!###\n\n\n", cidade2);
+            printf("### A carta 2 %s venceu! ###\n\n\n", cidade2);
         }
         
     break;
@@ -98,11 +98,11 @@ int main() {
             , cidade1, cidade2, cidade1, area1, cidade2, area2);
     if (area1 == area2) 
         {
-            printf("###As cartas empataram!###\n\n\n");
+            printf("### As cartas empataram! ###\n\n\n");
     }else if(area1 > area2){
-            printf("###A carta 1 %s venceu!###\n\n\n", cidade1);
+            printf("### A carta 1 %s venceu! ###\n\n\n", cidade1);
     }else{
-            printf("###A carta 2 %s venceu!###\n\n\n", cidade2);
+            printf("### A carta 2 %s venceu! ###\n\n\n", cidade2);
         }
         
     break;
@@ -113,11 +113,11 @@ int main() {
             , cidade1, cidade2, cidade1, pib1, cidade2, pib2);
     if (pib1 == pib2) 
         {
-            printf("###As cartas empataram!###\n\n\n");
+            printf("### As cartas empataram! ###\n\n\n");
     }else if(pib1 > pib2){
-            printf("###A carta 1 %s venceu!###\n\n\n", cidade1);
+            printf("### A carta 1 %s venceu! ###\n\n\n", cidade1);
     }else{
-            printf("###A carta 2 %s venceu!###\n\n\n", cidade2);
+            printf("### A carta 2 %s venceu! ###\n\n\n", cidade2);
         }
         
     break;
@@ -127,11 +127,11 @@ int main() {
             , cidade1, cidade2, cidade1, turismo1, cidade2, turismo2);
     if (turismo1 == turismo2) 
         {
-            printf("###As cartas empataram!###\n\n\n");
+            printf("### As cartas empataram! ###\n\n\n");
     }else if(turismo1 > turismo2){
-            printf("###A carta 1 %s venceu!###\n\n\n", cidade1);
+            printf("### A carta 1 %s venceu! ###\n\n\n", cidade1);
     }else{
-            printf("###A carta 2 %s venceu!###\n\n\n", cidade2);
+            printf("### A carta 2 %s venceu! ###\n\n\n", cidade2);
         }
         
     break;
@@ -142,17 +142,17 @@ int main() {
             , cidade1, cidade2, cidade1, densidade1, cidade2, densidade2);
     if (densidade1 == densidade2) 
         {
-            printf("###As cartas empataram!###\n\n\n");
+            printf("### As cartas empataram! ###\n\n\n");
     }else if(densidade1 < densidade2){
-            printf("###A carta 1 %s venceu!###\n\n\n", cidade1);
+            printf("### A carta 1 %s venceu! ###\n\n\n", cidade1);
     }else{
-            printf("###A carta 2 %s venceu!###\n\n\n", cidade2);
+            printf("### A carta 2 %s venceu! ###\n\n\n", cidade2);
         }
         
     break;
     
     default:
-    printf("Opção invalida!");
+    printf("### Opção invalida! ###\n\n");
         break;
     }
 
